@@ -1,0 +1,1886 @@
+.lSAction .lSNext {
+    opacity: 1 !important;
+    background-position: 50% 100%;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-size: auto auto;
+    height: 275px;
+    top: 0;
+    z-index: 0;
+    right: 0 !important;
+}
+.lSAction .lSPrev {
+    display: none;
+}
+.lSSlideOuter .lSPager.lSpg>li a {
+    transition: all .2s linear 0s;
+}
+.spoilerAnimation {
+    transform: rotate(180deg);
+}
+.linkStyle {
+    font-style: italic;
+    color: inherit;
+}
+.linkStyle:after {
+    content: "";
+    display:inline-block;
+    height:10px;
+    width:10px;
+    background-size: 10px 10px;
+    background-image: url(./icons/icon_for_christina.svg);
+    background-repeat: no-repeat;
+    margin-left: 3px;
+}
+.mobileSearch{
+    display:none;
+}
+.spoiler{
+    display:none;
+}
+.iconBox{
+    display:flex;
+    align-items:center;
+    margin-right:25px;
+}
+.iconBox:last-child{
+    margin-right:0;
+}
+.iconBox img{
+    width:20px;
+}
+.bgWrapper{
+    background-image:url(./img/bg.png);
+    background-position:center top;
+    background-repeat:no-repeat;
+    font-family:Arial;
+    background-color:#f9f9f9;
+    font-size:14px;
+}
+.bgWrapper.bgWrapperNew {
+    background-image:url(./img/bg2.png);
+}
+.bgWrapper header nav{
+    display:flex;
+    align-items:center;
+}
+.bgWrapper header nav .searchButton{
+    display:block;
+}
+.bgWrapper header nav .searchButton a{
+    display:block;
+    position:relative;
+}
+.bgWrapper header nav .searchButton a:before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width:20px;
+    height:24px;
+}
+.bgWrapper .bgEnter{
+    position:fixed;
+    z-index:5;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color:rgba(0,0,0,.6);
+    display:none;
+}
+.bgWrapper .bgEnter .flexPopup{
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:999;
+}
+.bgWrapper .bgEnter .flexPopup .popup{
+    position:relative;
+    background-color:#fff;
+    padding:50px 35px 25px;
+    box-sizing:border-box;
+    width:100%;
+    margin:0 10px;
+    max-width:350px;
+    border-radius:15px;
+    overflow:auto
+}
+.bgWrapper .bgEnter .popup span{
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+}
+.bgWrapper .bgEnter .popup .closePopup:before{
+    content:"";
+    display:block;
+    height:15px;
+    width:15px;
+    background-size:15px 15px;
+    background-image:url(img/close.svg);
+    background-repeat:no-repeat;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper .popupImg{
+    text-align:center;
+    margin-bottom:50px;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper .popupImg img{
+    max-width:200px;
+    max-height:200px;
+    width:100%;
+    border-radius:50%;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper .popupuserInfo{
+    max-width:230px;
+    margin:0 auto;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper .popupuserInfo .userInfo{
+    font-size:12px;
+    color:#333;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper .popupuserInfo .userInfo:first-child{
+    color:#000;
+    font-weight:600;
+    font-size:16px;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper .popupuserInfo .userInfo:first-child small{
+    font-weight:100;
+    color:#a7a7a7;
+    font-size:10px;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper .popupuserInfo .userInfo a{
+    text-decoration:none;
+    color:inherit;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper .popupuserInfo .userInfo.post{
+    margin:20px 0;
+    font-weight:700;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper .popupuserInfo .userInfo.post:before{
+    content:"@";
+    font-weight:700;
+    margin-right:20px;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper .popupuserInfo .userInfo:nth-child(2){
+    font-size:10px;
+    color:#a7a7a7;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper .exitButton{
+    display:flex;
+    justify-content:center;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper .exitButton a{
+    color:#bb280f;
+    text-decoration:none;
+    font-size:14px;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper .exitButton:after{
+    content:"";
+    display:block;
+    height:15px;
+    margin-left:7px;
+    width:15px;
+    background-size:15px 15px;
+    background-image:url(img/exit-b.png);
+    background-repeat:no-repeat;
+}
+.bgWrapper .bgEnter .popup.login{
+    padding:30px 50px;
+}
+.bgWrapper .bgEnter .popup .popupInfo--name{
+    text-align:center;
+    font-size:18px;
+    font-weight:700;
+}
+.bgWrapper .bgEnter .popup .popupInfo--text--right{
+    text-align:right;
+    color:#bb280f;
+    font-size:12px;
+    margin-bottom:30px;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper form.form--values .windowGenerated--content .windowGenerated--label{
+    display:block;
+    margin-bottom:40px;
+    border-bottom:1px solid #f7f7f7;
+    position: relative;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper form.form--values .windowGenerated--content .windowGenerated--content--button button{
+    display:block;
+    margin:0 auto 22px auto;
+    border:none;
+    background:0 0;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper form.form--values .windowGenerated--content .windowGenerated--content--button button.enter{
+    color:#bb280f;
+    position: relative;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper form.form--values .windowGenerated--content .windowGenerated--content--button button.enter:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: -13px;
+    margin: auto 0;
+    width: 15px;
+    height: 15px;
+    background: url('./icons/account/circle.svg') no-repeat;
+    background-size: cover;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper form.form--values .windowGenerated--content .windowGenerated--content--button button.registration{
+    color:#000;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper form.form--values .windowGenerated--content .windowGenerated--text{
+    border:none;
+    outline: none;
+    width: 100%;
+    padding: 0 0 7px 20px;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper form.form--values .windowGenerated--content .windowGenerated--label.iconMail:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    margin: auto 0;
+    width: 15px;
+    height: 15px;
+    background: url('./icons/account/mail.svg') no-repeat;
+    background-size: cover;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper form.form--values .windowGenerated--content .windowGenerated--label.iconPass:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    margin: auto 0;
+    width: 15px;
+    height: 15px;
+    background: url('./icons/account/key.svg') no-repeat;
+    background-size: cover;
+}
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper form.form--values .windowGenerated--content .iconMail img {
+    width: 15px;
+}
+
+.bgWrapper .bgEnter .popup .popupInfo--Wrapper form.form--values .windowGenerated--content  .iconMail  + input {
+    padding-left: 16px;
+}
+
+.bgWrapper .bgEnter .popup.login .alternativeEnter{
+    margin-top:30px;
+}
+.bgWrapper .bgEnter .popup.login .alternativeEnter .servicesWrapper{
+    display:flex;
+    flex-wrap:wrap;
+    margin-bottom:-20px;
+}
+.bgWrapper .bgEnter .popup.login .alternativeEnter .servicesWrapper .service{
+    width:50%;
+    text-align:center;
+    margin-bottom:20px;
+}
+.bgWrapper .bgEnter .popup.login .line{
+    border-top:1px solid #f7f7f7;
+    margin:0 0 0 -50px;
+    width:calc(100% + 100px);
+}
+.bgWrapper .bgEnter .popup .toolsIcon{
+    position:absolute;;
+    bottom:10px;
+    right:10px;
+    height:14px;
+    width:14px;
+}
+.bgWrapper .bgEnter .popup .toolsIcon a img:hover{
+    transform:rotate(60deg);
+    transition:all .3s ease;
+}
+.bgWrapper header{
+    max-width:1160px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0 25px 0;
+    position:relative;
+}
+.bgWrapper header .logoWrapper{
+    padding-left:55px;
+}
+.bgWrapper header .logoWrapper img{
+    width:115px;
+    height:50px;
+}
+.bgWrapper header nav .toggle{
+    display:none;
+    position:relative;
+}
+.bgWrapper header nav ul.headerMenu{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    padding-left:0;
+    margin:0;
+}
+.bgWrapper header nav ul.headerMenu li{
+    list-style-type:none;
+    font-size:14px;
+    font-weight:700;
+    padding:20px 30px;
+}
+.bgWrapper header nav ul.headerMenu li a{
+    color:#141414;
+    text-decoration:none;
+}
+.bgWrapper header nav ul.headerMenu .enterButton a{
+    width:20px;
+    height:20px;
+    display:block;
+    position:relative;
+    margin:0 auto;
+}
+.bgWrapper header nav ul.headerMenu .enterButton a object{
+    width:20px;
+    height:20px;
+}
+.bgWrapper header nav ul.headerMenu .enterButton a:after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+.bgWrapper header nav ul.headerMenu .searchButton{
+    display:flex;
+    align-items:flex-start;
+}
+.bgWrapper header nav ul.headerMenu .searchButton input{
+    border:none;
+    margin-left:40px;
+}
+.bgWrapper header nav ul.headerMenu .searchButton a{
+    position:relative;
+    display:block;
+    height:20px;
+}
+.bgWrapper header nav ul.headerMenu .searchButton a:after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+.bgWrapper main{
+    width:100%;
+    margin:0 auto;
+}
+.bgWrapper main.pageGame{
+    display:flex;
+    max-width:1180px;
+    width:100%;
+    margin:0 auto 10px auto;
+    justify-content:center;
+    align-items:flex-start;
+    padding:0 10px;
+    box-sizing:border-box;
+}
+.bgWrapper main .blocksNews{
+    display:flex;
+    max-width:1180px;
+    width:100%;
+    margin:0 auto;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.bgWrapper main .blocksNews.game{
+    align-items:flex-start;
+    margin-left:-10px;
+    margin-bottom:10px;
+}
+.bgWrapper main .blocksNews.postWrapper{
+    display:block;
+    padding:50px 50px 30px 50px;
+    box-sizing:border-box;
+    max-width:865px;
+    margin-right:20px;
+    width:calc(76% - 10px);
+}
+.bgWrapper main .adWrapper.small{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto;
+}
+.bgWrapper main .adWrapper.small a{
+    position:relative;
+}
+.bgWrapper main .blocksNews.postWrapper .authorBlock{
+    flex-wrap:wrap;
+}
+.bgWrapper main .blocksNews.postWrapper a{
+    text-decoration:none;
+}
+.bgWrapper main .blocksNews.postWrapper img{
+    margin:0 0 0 -50px;
+    width:calc(100% + 100px);
+}
+.bgWrapper main .blocksNews.postWrapper .topText--news{
+    margin-bottom:20px;
+}
+.bgWrapper main .blocksNews.postWrapper .topText--news .text{
+    line-height:30px;
+    font-size:24px;
+    vertical-align: middle;
+}
+.bgWrapper main .blocksNews.postWrapper .authorBlock{
+    display:flex;
+    align-items:center;
+    color:#a7a7a7;
+    font-size:14px;
+    margin-bottom:20px;
+}
+.bgWrapper main .blocksNews.postWrapper .authorBlock .authorImg{
+    margin-right:10px;
+}
+.bgWrapper main .blocksNews.postWrapper .authorBlock .authorImg img{
+    margin:0;
+    max-width:28px;
+    width: 100%;
+}
+.bgWrapper main .blocksNews.postWrapper .authorBlock .authorName{
+    margin-right:25px;
+}
+.bgWrapper main .blocksNews.postWrapper .authorBlock .date{
+    display:flex;
+    margin-right:25px;
+}
+.bgWrapper main .blocksNews.postWrapper .authorBlock .date:before{
+    content:"";
+    display:block;
+    height:18px;
+    width:18px;
+    background-size:18px 18px;
+    background:url(icons/post/date.svg);
+    background-repeat:no-repeat;
+}
+.bgWrapper main .blocksNews.postWrapper .authorBlock .newsActive{
+    display:flex;
+    margin-right:15px;
+}
+.bgWrapper main .blocksNews.postWrapper .authorBlock .newsActive:before{
+    content:"";
+    display:block;
+    height:18px;
+    width:18px;
+    background-size:18px 18px;
+    background:url(icons/post/views.svg);
+    background-repeat:no-repeat;
+}
+.bgWrapper main .blocksNews.postWrapper .authorBlock .newsComments{
+    display:flex;
+    margin-right:15px;
+}
+.bgWrapper main .blocksNews.postWrapper .authorBlock .newsComments:before{
+    content:"";
+    display:block;
+    height:18px;
+    width:18px;
+    background-size:18px 18px;
+    background:url(icons/post/comments.svg);
+    background-repeat:no-repeat;
+}
+.bgWrapper main .blocksNews.postWrapper .blockContent #postSlider{
+    position:relative;
+    margin:0 0 0 -50px;
+    width:calc(100% + 100px);
+}
+.bgWrapper main .blocksNews.postWrapper .blockContent #postSlider ul{
+    padding:0;
+    margin:0;
+}
+.bgWrapper main .blocksNews.postWrapper .blockContent #postSlider ul li img{
+    max-width:100%;
+    width:100%;
+    margin:0;
+}
+.bgWrapper main .blocksNews.postWrapper .blockContent #postSlider .lSSlideOuter .lSPager.lSpg {
+    position: absolute;
+    bottom: 25px;
+    left: calc(50% - 70px);
+}
+
+.bgWrapper main .blocksNews.postWrapper .blockContent #postSlider .lSSlideOuter .lSPager.lSpg > li {
+    width: 20px;
+    height: 20px;
+    padding: 0 9px;
+}
+.bgWrapper main .blocksNews.postWrapper .blockContent #postSlider .lSSlideOuter .lSPager.lSpg > li a {
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+.bgWrapper main .blocksNews.postWrapper .blockContent #postSlider .lSSlideOuter .lSPager.lSpg > li.active a {
+    width: 20px;
+    height: 20px;
+}
+
+.bgWrapper main .blocksNews.postWrapper .blockContent #postSlider .lSSlideOuter .lSPager.lSpg > li a:hover {
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+}
+.bgWrapper main .blocksNews.postWrapper .blockContent .blockAbout--post{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+}
+.bgWrapper main .blocksNews.postWrapper .blockContent .blockAbout--post .source{
+    font-size:14px;
+    color:#a7a7a7;
+}
+.bgWrapper main .blocksNews.postWrapper .blockContent .blockAbout--post .share{
+    display:flex;
+    align-items:center;
+}
+.bgWrapper main .blocksNews.postWrapper .blockContent .blockAbout--post .share p{
+    margin:0;
+}
+.bgWrapper main .blocksNews.postWrapper .blockContent .blockAbout--post .source a{
+    color:#141414;
+}
+.bgWrapper main .blocksNews.postWrapper .blockContent .blockAbout--post .source a .gameLink{
+    width:10px;
+    margin:0;
+}
+.smallNewsBlock ul li a img{
+    width:9px;
+}
+.bgWrapper main .adWrapper{
+    margin:10px;
+    display:inline-block;
+    position:relative;
+}
+.bgWrapper main .adWrapper.small{
+    max-width:275px;
+    border:none;
+}
+.bgWrapper main .adWrapper.small.position.separateAd--block{
+    margin:20px 0 0 0;
+}
+.bgWrapper main .adWrapper.small.position .adImg{
+    width:275px;
+    height:365px;
+}
+.bgWrapper main .adWrapper.small.position .adImg img{
+    border-radius:15px;
+    width:275px;
+    height:365px;
+}
+.bgWrapper main .blockWrapper{
+    min-width:321px;
+    width:calc(33.33% - 20px);
+    margin:10px;
+    display:inline-block;
+    vertical-align:top;
+    transition:.5s ease-out;
+}
+.bgWrapper main .blockWrapper:hover{
+    transform:scale(1.02);
+    transition:.5s ease-in;
+}
+.bgWrapper main .blockWrapper a{
+    cursor:pointer;
+}
+.bgWrapper main .blockWrapper .imgNews{
+    background:url(img/posters/game1.jpg);
+    background-size:cover;
+    overflow:hidden;
+    height:236px;
+    border-radius:15px 15px 0 0;
+    background-position:center;
+}
+.bgWrapper main .blockWrapper .imgNews img{
+    width:100%;
+    border-radius:15px 15px 0 0;
+}
+.bgWrapper main .blockWrapper .textNews--wrapper{
+    padding:20px;
+    height:88px;
+    display:flex;
+    flex-direction:column;
+}
+.bgWrapper main .blockWrapper .textNews--wrapper .middleText{
+    text-align:center;
+    color:#141414;
+    font-weight:700;
+    margin-top:20px;
+}
+.bgWrapper main .blockWrapper .textNews--wrapper .middleText span{
+    text-decoration:line-through;
+    color:#a7a7a7;
+    font-weight:400;
+}
+.bgWrapper main .blockWrapper .textNews--wrapper .bottomText{
+    display:flex;
+    justify-content:space-between;
+    font-size:14px;
+    color:#aaa;
+    position:absolute;
+    bottom:20px;
+    width:calc(100% - 40px);
+}
+.bgWrapper main .blockWrapper .textNews--wrapper .bottomText .dateNews{
+    display:inline-flex;
+    align-items:center;
+}
+.bgWrapper main .blockWrapper .textNews--wrapper .bottomText .dateNews img{
+    width:18px;
+}
+.bgWrapper main .blockWrapper .textNews--wrapper .bottomText .iconBox{
+    display:flex;
+    align-items:center;
+}
+.bgWrapper main .blockWrapper .textNews--wrapper .bottomText .infoNews{
+    display:inline-flex;
+}
+.bgWrapper main .blockWrapper .textNews--wrapper .bottomText .infoNews .info{
+    display:flex;
+    align-items:center;
+}
+.bgWrapper main .blockWrapper .textNews--wrapper .bottomText .infoNews .info img{
+    width:18px;
+}
+.bgWrapper main .blockWrapper .textNews--wrapper .bottomText .infoNews .info:first-child{
+    margin-right:25px;
+}
+.bgWrapper main .blockWrapper .textNews--wrapper .bottomText .infoNews .info.mrg{
+    margin-left:0;
+    margin-right:0;
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+.bgWrapper main .blockWrapper .textNews--wrapper .bottomText .infoNews .info.mrg .link{
+    display:flex;
+    align-items: center;
+}
+.bgWrapper main .blockWrapper .textNews--wrapper .bottomText .infoNews .info.mrg .link:before{
+    content:url(./icons/hot-game-grey.svg);
+
+}
+
+.bgWrapper main .blockWrapper .textNews--wrapper .bottomText .infoNews .info.mrg .link:hover:before{
+    content:url(./icons/hot-game-red.svg);
+}
+
+.bgWrapper main .blockWrapper .textNews--wrapper .bottomText .infoNews .info.mrg .link:hover:after{
+    content:url(./icons/link-red.svg);
+}
+
+.bgWrapper main .blockWrapper .textNews--wrapper .bottomText .infoNews .info.mrg .link:after{
+    content:url(./icons/link-grey.svg);
+    margin-left:4px;
+    width: 10px;
+}
+.bgWrapper main .blockWrapper .textNews--wrapper .bottomText.right a{
+    text-decoration:none;
+    color:#aaa;
+}
+.bgWrapper main .blockWrapper .textNews--wrapper .bottomText.right a:hover{
+    color:#bb280f;
+}
+.bgWrapper main .blockWrapper .textNews--wrapper.tall{
+    height:auto;
+    /*padding-bottom:0;*/
+}
+.bgWrapper main .blockWrapper.big{
+    width:calc(50% - 167.5px)
+}
+.bgWrapper main .blockWrapper.gameBig{
+    width:calc(50% - 20px)
+}
+.bgWrapper main .blockWrapper.small{
+    width:275px;
+    min-width:275px;
+}
+.bgWrapper main .blockWrapper.small.devVersion .game-img {
+    height: auto;
+}
+.bgWrapper main .blockWrapper.small.devVersion .side--bottom--block .mainInfo .storeBlock--wrapper .storeBlock {
+    align-items: inherit;
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo .iconLink {
+    display: flex;
+    justify-content: flex-end;
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo .iconLink a {
+    display: flex;
+    align-items: center;
+    color: #a7a7a7;
+    text-decoration: none;
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo .iconLink img{
+    width: 21px;
+}
+.bgWrapper main .blockWrapper.small:hover{
+    transform: none;
+}
+.bgWrapper main .blockWrapper.small.top{
+    margin:0
+}
+.bgWrapper main .blockWrapper.smallNews{
+    width:275px;
+    min-width:275px;
+    margin-top:0
+}
+.bgWrapper main .blockWrapper .game-img{
+    max-height:387px
+}
+.bgWrapper main .blockWrapper .game-img img{
+    width:100%;
+    border-radius:15px 15px 0 0
+}
+.bgWrapper main .blockWrapper .side--bottom--block .newsGame--name{
+    padding-bottom:10px
+}
+.bgWrapper main .blockWrapper .side--bottom--block .newsGame--name a{
+    text-align:center;
+    font-weight:700;
+    color:#141414;
+    font-size:16px;
+    margin-bottom:15px;
+    text-decoration:none;
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-wrap:wrap;
+    line-height:1.8;
+    font-size:14px;
+}
+ul.linksStyle li a:after{
+    content:"";
+    display:inline-block;
+    height:9px;
+    width:9px;
+    background-size:9px 9px;
+    background-image:url(./icons/icon_for_christina.svg);
+    background-repeat:no-repeat;
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul li{
+    display:flex;
+    align-items:center;
+    padding: 0 3px 0 0;
+    box-sizing: border-box;
+}
+ul li.mainInfo--name{
+    color:#a7a7a7;
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul li a{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    color:inherit;
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul li a .grey {
+    color: #a7a7a7;
+}
+ul li a img.gameImg{
+    vertical-align:middle;
+    padding:0 5px;
+    width:20px;
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul li a img.gameLink{
+    padding-left:5px;
+    width: 10px;
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul.gameTools{
+    margin:20px -10px;
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul.gameTools li{
+    margin:0 0 10px;
+    padding:0 8px;
+    box-sizing:border-box;
+    border-right:1px solid #f0f0f0
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul.gameTools li a img.bigIcon{
+    width: 22px;
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul.gameTools li a img.smallIcon{
+    width: 11px;
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul.gameTools li img{
+    margin-right:10px
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul.gameTools li img.pegi{
+    width: 29px;
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul.gameTools li img.pegi.small{
+    width: 22px;
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul.gameTools li ul li{
+    border-right:none;
+    margin-bottom:0;
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul.gameTools li:last-child{
+    border-right:none;
+}
+.bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul.gameTools li.gameType{
+    border-right:0;
+}
+.saleBlock--wrapper{
+    padding:20px 40px;
+    box-sizing:border-box;
+}
+.rightWidth{
+    min-width:275px;
+    width:275px;
+    margin:15px auto;
+}
+.saleBlock--wrapper .saleHeader{
+    text-align:center;
+    margin-bottom:24px;
+    font-weight:700;
+}
+.saleBlock--wrapper .saleBlock{
+    display:flex;
+    justify-content:space-between;
+}
+.saleBlock--wrapper .saleBlock .salePlatforms{
+    display:flex;
+    align-items: center;
+}
+.saleBlock--wrapper .saleBlock .salePlatforms .salePlatform{
+    margin-right:12px
+}
+.saleBlock--wrapper .saleBlock .salePlatforms .salePlatform img {
+    width: 19px;
+}
+.saleBlock--wrapper .saleBlock .salePrice span{
+    font-weight:700;
+}
+.smallNewsBlock{
+    padding:20px;
+    box-sizing:border-box;
+}
+.smallNewsBlock .smallNewsBlock--header{
+    text-align:center;
+    font-weight:700;
+    margin-bottom:20px;
+}
+.smallNewsBlock ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-wrap:wrap;
+    line-height:1.8;
+    font-size:14px;
+}
+.smallNewsBlock ul li a{
+    text-decoration:none;
+    color:initial;
+}
+.smallNewsBlock ul.smallNewsBlock--tags{
+    margin-top:30px;
+}
+.bgWrapper main .storeBlock--wrapper{
+    padding:13px 26px;
+    position:relative;
+    border:1px solid #f0f0f0;
+    border-radius:15px;
+    margin-bottom:30px;
+}
+.bgWrapper main .storeBlock--wrapper .storeBlock{
+    text-align:center;
+    display:flex;
+    align-items:center;
+    flex-direction:column
+}
+.bgWrapper main .storeBlock--wrapper .storeBlock a{
+    text-decoration:none;
+    color:inherit;
+}
+.bgWrapper main .storeBlock--wrapper .storeBlock a img{
+    margin-right:9px;
+    vertical-align:middle;
+    width: 19px;
+}
+.greyFilter img {
+    filter: invert(73%) sepia(1%) saturate(0%) hue-rotate(198deg) brightness(92%) contrast(89%);
+}
+.bgWrapper main .storeBlock--wrapper .storeBlock a img.bigIcon {
+    width: 22px;
+}
+.bgWrapper main .storeBlock--wrapper .storeBlock a .storeBlock--name{
+    font-size:18px;
+    vertical-align:middle;
+}
+.bgWrapper main .storeBlock--wrapper .storeBlock .storeBlock--devices--price{
+    display:flex;
+    justify-content:space-between;
+    margin-top:18px;
+}
+.bgWrapper main .storeBlock--wrapper .storeBlock .storeBlock--devices--price
+.bgWrapper main .storeBlock--wrapper .storeBlock .storeBlock--devices--price .storeBlock--price{
+    margin-left:20px;
+}
+.bgWrapper main .storeBlock--wrapper .storeBlock .storeBlock--devices--price .storeBlock--price span{
+    font-weight:600;
+}
+.bgWrapper main .storeBlock--wrapper .storeBlock .storeBlock--devices--price .storeBlock--price span img {
+    width: 10px;
+}
+.bgWrapper main .storeBlock--wrapper.separateBlock{
+    margin:20px 0;
+}
+.bgWrapper main .storeBlock--wrapper.separateBlock .storeBlock--name{
+    font-size:14px!important;
+    font-weight:700;
+}
+.bgWrapper main .sliderCalendar--block{
+    display:flex;
+    max-width:1160px;
+    max-height:487px;
+    width:100%;
+    margin: 0 auto;
+    box-sizing:border-box;
+    padding:0 10px;
+}
+.bgWrapper main .sliderCalendar--block .myslide{
+    width:100%;
+    height:446px;
+    background-image:url(./img/posters/skider.jpg);
+    background-position:center;
+    background-size:cover;
+    position:relative;
+}
+.bgWrapper main .sliderCalendar--block .myslide h1{
+    position:absolute;
+    color:#fff;
+    font-size:24px;
+    padding:40px 37px;
+    background:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.9));
+    margin:0;
+    bottom:0;
+}
+
+.bgWrapper main .sliderCalendar--block {
+    display: flex;
+    max-width: 1160px;
+    max-height: 487px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.bgWrapper main .sliderCalendar--block .lSSlideOuter {
+    width: 100%;
+    max-width: 865px;
+    position: relative;
+}
+.bgWrapper main .sliderCalendar--block .lSSlideOuter .lSSlideWrapper {
+    border-radius: 15px;
+}
+.bgWrapper main .sliderCalendar--block .lSSlideOuter .lSPager.lSpg li {
+    width: 30px;
+    height: 24px;
+    margin: 5px auto;
+}
+.bgWrapper main .sliderCalendar--block .lSSlideOuter .lSPager.lSpg {
+    z-index: 0;
+    position: absolute;
+    top: calc(50% - 119px);
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0 !important;
+}
+.bgWrapper main .sliderCalendar--block .lSSlideOuter .lSPager.lSpg li.lslide {
+    margin-right: 0 !important;
+}
+.bgWrapper main .sliderCalendar--block .lSSlideOuter .lSPager.lSpg li a {
+    background-color: #fff;
+}
+.bgWrapper main .sliderCalendar--block .lSSlideOuter .lSPager.lSpg li a.prev--next--button {
+    width: 16px;
+    height: 16px;
+}
+.bgWrapper main .sliderCalendar--block .lSSlideOuter .lSPager.lSpg li a.prev--next--button2 {
+    width: 10px;
+    height: 10px;
+}
+
+.bgWrapper main .sliderCalendar--block .lSSlideOuter .lSPager.lSpg li a.active--button {
+    width: 20px;
+    height: 20px;
+}
+.bgWrapper main .sliderCalendar--block .lSSlideOuter .lSPager.lSpg li a:hover {
+    width: 20px;
+    height: 20px;
+}
+.bgWrapper main .sliderCalendar--block .lSSlideOuter .lightSlider {
+    width: 100%;
+}
+
+.bgWrapper main .sliderCalendar--block .nextGames--block{
+    position:relative;
+    max-width:276px;
+    width:100%;
+    background-color:#fff;
+    margin-left:20px;
+    box-shadow:0 0 10px 0 rgba(0,0,0,.1);
+    padding:17px;
+    box-sizing:border-box;
+    border-radius:15px;
+}
+.bgWrapper main .sliderCalendar--block .nextGames--block .nextGames--header{
+    font-size:14px;
+    font-weight:600;
+    text-align:center;
+    margin-bottom:20px;
+    color:#141414;
+}
+.bgWrapper main .sliderCalendar--block .nextGames--block .dateGame--info{
+    position:relative;
+    color:#141414;
+}
+.bgWrapper main .sliderCalendar--block .nextGames--block .dateGame--info .greyDott{
+    content:"";
+    background-image:url(icons/dot.svg);
+    background-size:3px 3px;
+    width:3px;
+    height:3px;
+    margin:5px 10px;
+}
+.bgWrapper main .sliderCalendar--block .nextGames--block .dateGame--info .greyDott.bright{
+    opacity:.7;
+}
+.bgWrapper main .sliderCalendar--block .nextGames--block .dateGame--info .greyDott.theBrightest{
+    opacity:.3;
+}
+.bgWrapper main .sliderCalendar--block .nextGames--block .dateGame--info .leftSide--date{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+}
+.bgWrapper main .sliderCalendar--block .nextGames--block .dateGame--info .leftSide--date.posLeft{
+    display:flex;
+    align-items:center;
+    justify-content:initial;
+}
+.bgWrapper main .sliderCalendar--block .nextGames--block .dateGame--info .leftSide--date.posLeft a{
+    text-decoration:none;
+    color:initial;
+}
+.bgWrapper main .sliderCalendar--block .nextGames--block .dateGame--info .leftSide--date .date .dateText{
+    border:1px solid #000;
+    border-radius:50%;
+    width:24px;
+    max-width:30px;
+    height:24px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:12px;
+    margin-left:-2px;
+}
+.bgWrapper main .sliderCalendar--block .nextGames--block .dateGame--info .leftSide--date .date .dateText a{
+    text-decoration:none;
+    color:initial;
+}
+.bgWrapper main .sliderCalendar--block .nextGames--block .dateGame--info .leftSide--date .gameName{
+    padding-left:23px;
+    font-size:14px;
+    max-width:70%;
+    width:172px;
+    text-align:center;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.bgWrapper main .sliderCalendar--block .nextGames--block .dateGame--info .leftSide--date .month{
+    max-width:30px;
+    font-size:12px;
+}
+.bgWrapper main .sliderCalendar--block .nextGames--block .dateGame--info .leftSide--date .month a{
+    color:initial;
+    text-decoration:none;
+}
+.bgWrapper main .sliderCalendar--block .nextGames--block .dateGame--info .leftSide--date .counter a{
+    font-size:12px;
+    color:#a7a7a7;
+    text-decoration:none;
+}
+.bgWrapper main .sliderCalendar--block .nextGames--block .sqBlock{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+}
+.bgWrapper main .sliderCalendar--block .nextGames--block .sqBlock:hover{
+    transform:scale(1.2);
+    transition:all .3s ease
+}
+.bgWrapper main .hotSlider--wrapper{
+    display:flex;
+    padding-bottom:10px;
+    max-width:1160px;
+    width:calc(100% - 20px);
+    margin:0 auto;
+    padding-top:20px;
+    -webkit-mask-image:linear-gradient(to left,rgba(0,0,0,0) 0,#000 50px,#000 100%);
+}
+.bgWrapper main .hotSlider--wrapper .hotSlider--name{
+    display:flex;
+    margin:0 32px 0 20px;
+    font-weight:700;
+    align-items:center;
+}
+.bgWrapper main .hotSlider--wrapper .hotSlider--name:before{
+    display:flex;
+    align-items:center;
+    margin-right:5px;
+    content:url(img/fire2.svg);
+}
+.bgWrapper main .hotSlider--wrapper .hotSlider{
+    position:relative;
+    -webkit-mask-image:linear-gradient(to left,rgba(0,0,0,0) 0,#000 50px,#000 100%);
+}
+.bgWrapper main .hotSlider--wrapper .hotSlider li.hotImage--block{
+    width:275px;
+    z-index:0;
+    background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(img/slider2.jpg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius:15px;
+    box-shadow:0 0 10px 0 rgba(0,0,0,.1);
+    height:75px;
+}
+.bgWrapper main .hotSlider--wrapper .hotSlider li.hotImage--block a{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    color:#fff;
+    font-size:13px;
+    font-weight:700;
+    font-family:Arial;
+    line-height:17px;
+    height:inherit;
+}
+.bgWrapper main .hotSlider--wrapper .hotSlider li.hotImage--block a span{
+    display:block;
+    padding:10px 20px;
+}
+.bgWrapper main .hotSlider--wrapper .hotSlider li.hotImage--block a span.gameName:before{
+    content:"";
+    display:inline-block;
+    width:4px;
+    height:4px;
+    border-radius:50%;
+    background-color:#fff;
+    margin-right:4px;
+    margin-bottom:3px;
+}
+.bgWrapper .paginationBlock{
+    display:flex;
+    justify-content:center;
+    margin:20px 0 30px 0;
+}
+.bgWrapper .paginationBlock .countPages{
+    color:#141414;
+}
+.bgWrapper .paginationBlock .countPages a{
+    color:#141414;
+    text-decoration:none;
+}
+.bgWrapper .paginationBlock .pageButtons{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+}
+.bgWrapper .paginationBlock .pageButtons .currentPage{
+    border-radius:50%;
+    background-color:#000;
+    border:2px solid #f7f7f7;
+    width:10px;
+    height:10px;
+    margin-left:10px;
+}
+.bgWrapper .paginationBlock .pageButtons .page{
+    display:flex;
+    align-items:center;
+    border-radius:50%;
+    width:10px;
+    height:10px;
+    margin-left:10px;
+    background-color:#a7a7a7
+}
+.bgWrapper .paginationBlock .pageButtons .page:hover{
+    opacity:1;
+    transform:scale(1.2);
+    transition:all .3s ease;
+}
+.bgWrapper .paginationBlock .pageButtons .op{
+    opacity:.3;
+}
+.bgWrapper footer{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    margin-bottom:10px;
+    padding:0 10px;
+}
+.bgWrapper footer .footerNav{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:32px 28px;
+    justify-content:space-between;
+    max-width:1109px;
+    width:100%;
+}
+.bgWrapper footer .footerNav .footerMobile--wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    width:67%;
+    justify-content:space-between;
+}
+.bgWrapper footer .footerNav .footerMobile--wrapper .footerMenu{
+    display:flex;
+    list-style-type:none;
+    margin:0;
+    padding-left:0;
+}
+.bgWrapper footer .footerNav .footerMobile--wrapper .footerMenu li{
+    font-weight:600;
+    font-size:13px;
+    padding:0 25px;
+}
+.bgWrapper footer .footerNav .footerMobile--wrapper .footerMenu li a{
+    text-decoration:none;
+    color:#141414;
+}
+.bgWrapper footer .footerNav .footerMobile--wrapper .footerMenu li .fireLogo{
+    display:flex;
+    align-items:center;
+}
+.bgWrapper footer .footerNav .footerMobile--wrapper .footerMenu li .fireLogo:before{
+    margin-right:5px;
+    content:"";
+    display:block;
+    height:16px;
+    width:10px;
+    background-size:10px 16px;
+    background-image:url(icons/Hot_Game_Logo_SMALL_SIZE.svg);
+    background-repeat:no-repeat;
+}
+.socialMenu{
+    display:flex;
+    list-style:none;
+    font-size:14px;
+    color:#a7a7a7;
+    padding:0;
+    margin:0;
+}
+.socialMenu li{
+    margin-left:18px;
+    width:15px;
+    height:15px;
+}
+.socialMenu li a.teleg:before{
+    content:url(icons/tel.svg);
+    width:15px;
+    background-size:contain;
+}
+.socialMenu li a.tv:before{
+    content:url(icons/tw.svg);
+    width:15px;
+    background-size:contain;
+}
+.socialMenu li a.vk:before{
+    content:url(icons/vk.svg);
+    width:15px;
+    background-size:contain;
+}
+.socialMenu li a.fb:before{
+    content:"";
+    display:block;
+    height:15px;
+    width:15px;
+    background-size:contain;
+    background-image:url(icons/fb.svg);
+    background-repeat:no-repeat;
+}
+.block{
+    background-color:#fff;
+    border-radius:15px;
+    box-shadow:0 0 10px 0 rgba(0,0,0,.1);
+    position:relative;
+}
+.block.borderRadius--bottom{
+    border-radius:0 0 15px 15px;
+}
+.block:hover{
+    box-shadow:0 0 10px 0 rgba(0,0,0,.3);
+}
+@media screen and (max-width:980px){
+
+    .bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul.gameTools li.gameType {
+        border-right: 1px solid #f0f0f0;
+    }
+    .bgWrapper main .blocksNews.game {
+        margin-left: 0;
+        box-sizing: border-box;
+    }
+    .bgWrapper main .blocksNews.postWrapper img {
+        margin: 0 0 0 -20px;
+        width: calc(100% + 40px);
+    }
+    .bgWrapper main .blocksNews.postWrapper {
+        padding: 50px 20px 30px 20px;
+    }
+    .bgWrapper main .blocksNews.postWrapper .blockContent #postSlider {
+        margin: 0 0 0 -20px;
+        width: calc(100% + 40px);
+    }
+
+    .mobileNewsRight{
+        display:flex;
+        align-items:center;
+    }
+    .mobileNewsRight .adWrapper.small.position{
+        margin-left:20px;
+    }
+    .mobileNewsRight .mobileNewsRight--wrapper{
+        width:100%;
+    }
+    .bgWrapper header nav ul.headerMenu li a{
+        display:flex;
+        justify-content:center;
+        margin:0 auto;
+        align-items:center;
+    }
+    .searchLine{
+        width:80%;
+    }
+    .bgWrapper main .blocksNews.postWrapper{
+        width:100%;
+        max-width:100%;
+        margin:0;
+    }
+    .bgWrapper main.pageGame{
+        flex-direction:column-reverse;
+        align-items: center;
+    }
+    .bgWrapper main.pageGame.column--direction{
+        flex-direction:column;
+        padding:0 20px;
+        box-sizing:border-box;
+    }
+    .bgWrapper main .blockWrapper.small{
+        min-width:485px;
+        display:flex;
+        width:calc(100% - 20px);
+        margin:30px 10px;
+        max-height:387px;
+
+    }
+    .bgWrapper main .blockWrapper .game-img{
+        width:275px;
+        height:387px;
+    }
+    .bgWrapper main .blockWrapper .game-img img{
+        border-radius:15px 0 0 15px;
+        width:275px;
+    }
+    .bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul.gameTools{
+        margin:0 -10px;
+    }
+    .bgWrapper main .blockWrapper .side--bottom--block .mainInfo .storeBlock--wrapper .storeBlock{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:flex-start;
+        flex-wrap:wrap;
+        padding:5px 0;
+        width: 100%;
+
+    }
+    .bgWrapper main .blockWrapper .side--bottom--block .mainInfo .storeBlock--wrapper .storeBlock .storeBlock--devices--price{
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        width:auto;
+        margin-left:19px;
+        margin-top:10px
+    }
+    .bgWrapper main .blockWrapper .side--bottom--block .mainInfo .storeBlock--wrapper .storeBlock .mobileVersion{
+        display:flex;
+        align-items:flex-end;
+    }
+    .bgWrapper main .blockWrapper .side--bottom--block .mainInfo .storeBlock--wrapper{
+        max-width:300px;
+        padding:5px 26px;
+        margin:25px auto;
+        min-height:58px;
+        display:flex;
+        align-items:center;
+    }
+
+    .bgWrapper main .blockWrapper .side--bottom--block .newsGame--name a{
+        font-size:24px;
+    }
+    .bgWrapper main .blockWrapper .textNews--wrapper{
+        justify-content:flex-start;
+    }
+    .bgWrapper main .blockWrapper .textNews--wrapper.textNews--wrapper.tall.side--bottom--block{
+        overflow:auto;
+    }
+    .bgWrapper main .blockWrapper .textNews--wrapper.tall {
+        padding: 20px;
+    }
+    .bgWrapper footer .footerNav{
+        justify-content:center;
+        margin:10px;
+    }
+    .bgWrapper footer .footerNav .footerMobile--wrapper .footerMenu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .bgWrapper footer .footerNav .footerMobile--wrapper .footerMenu li{
+        margin:12px 0;
+    }
+    .bgWrapper footer .footerNav .footerMobile--wrapper .footerMenu li:last-child{
+        margin-bottom:0;
+    }
+    .bgWrapper footer .footerNav .logoFooter{
+        margin-bottom:0;
+    }
+    .bgWrapper footer .footerNav .footerMobile--wrapper .socialMenu{
+        margin-bottom:33px;
+        justify-content:center;
+    }
+    .bgWrapper footer .footerNav .footerMobile--wrapper{
+        justify-content:center;
+        flex-direction:column-reverse;
+    }
+    .rightWidth{
+        width:100%;
+        margin-top:0;
+        margin-bottom:20px;
+    }
+    .rightWidth:last-child{
+        margin-bottom:0;
+    }
+    .bgWrapper main .blockWrapper .side--bottom--block .mainInfo .storeBlock--wrapper .storeBlock .mobileVersion {
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:1005px){
+    .bgWrapper header nav ul.headerMenu{
+        display:flex!important;
+        flex-wrap:wrap;
+        align-items:center;
+        padding-left:0;
+        margin:0;
+    }
+}
+@media screen and (max-width:1005px){
+    .bgWrapper main .blockWrapper.small.top{
+        margin:30px 0 30px 0;
+        width:100%;
+    }
+    .mobileSearch{
+        display:block;
+    }
+    .bgWrapper{
+        background-image:none;
+    }
+    .bgWrapper header nav .searchButton{
+        position:absolute;
+        right:20px;
+    }
+    .searchLineButton{
+        position:absolute!important;
+        left:50%!important;
+        transform:translateX(-50%)!important;
+        max-width:calc(100% - 20px)!important;
+        margin-right:0;
+        bottom:25px!important;
+    }
+    .bgWrapper header{
+        flex-direction:row-reverse;
+        padding:20px;
+    }
+    .bgWrapper header nav ul.headerMenu .searchButton{
+        display:none;
+    }
+    .bgWrapper main .sliderCalendar--block .nextGames--block{
+        display:none;
+    }
+    .bgWrapper main .sliderCalendar--block .myslide{
+        height:0;
+        padding-bottom:45%;
+        background-size:100%;
+    }
+    .bgWrapper main .sliderCalendar--block .myslide h1{
+        font-size:2.3vh;
+    }
+    .lightSlider li{
+        border-radius:20px;
+    }
+    .bgWrapper header nav .toggle{
+        display:block;
+        width:30px;
+        background-image:url(icons/menu.svg);
+        height:30px;
+    }
+    .bgWrapper header nav ul.headerMenu{
+        display:none;
+        position:absolute;
+        width:100%;
+        flex-direction:column;
+        z-index:4;
+        background-color:#fff;
+        right:0;
+        text-align:center;
+        top:80px;
+        background-color:#f9f9f9
+    }
+    .bgWrapper header .logoWrapper{
+        padding-left:0;
+        margin:0 auto;
+    }
+    .bgWrapper main .blockWrapper .imgNews{
+        height:175px;
+    }
+}
+@media screen and (max-width:600px){
+
+    .mobileNewsRight{
+        flex-wrap:wrap;
+        margin-top:20px;
+    }
+    .mobileNewsRight .adWrapper.small.position{
+        margin:0 auto;
+    }
+    .mobileNewsRight .adWrapper.small.position{
+        margin-top:20px
+    }
+    .bgWrapper main .blocksNews.game{
+        margin-left:0;
+        /*margin-bottom:20px;*/
+        /*padding: 20px;*/
+    }
+
+    .bgWrapper main .sliderCalendar--block .lSSlideOuter .lSPager.lSpg {
+        top: calc(50% - 70px);
+        right: 7px;
+    }
+    .bgWrapper main .sliderCalendar--block .lSSlideOuter .lSPager.lSpg li {
+        width: 10px;
+        height: 10px;
+
+    }
+    .bgWrapper main .sliderCalendar--block .lSSlideOuter .lSPager.lSpg li a {
+        width: 3px;
+        height: 3px;
+        display: inline-block;
+        vertical-align: super;
+    }
+    .bgWrapper main .sliderCalendar--block .lSSlideOuter .lSPager.lSpg li.active a {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        vertical-align: super;
+    }
+    .bgWrapper main .sliderCalendar--block .lSSlideOuter .lSPager.lSpg li a.prev--next--button {
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        vertical-align: super;
+    }
+    .bgWrapper main .sliderCalendar--block .lSSlideOuter .lSPager.lSpg li a.prev--next--button2 {
+        width: 5px;
+        height: 5px;
+        display: inline-block;
+        vertical-align: super;
+    }
+
+    .bgWrapper footer .footerNav .logoFooter{
+        margin-bottom:24px
+    }
+    .bgWrapper main .blocksNews.postWrapper .topText--news .text{
+        font-size:14px;
+        line-height:14px;
+        vertical-align: middle;
+    }
+    .bgWrapper main .blockWrapper .textNews--wrapper.textNews--wrapper.tall.side--bottom--block{
+        overflow:inherit;
+    }
+    .spoiler{
+        display:block;
+        width:24px;
+        height:24px;
+        margin:0 auto 10px;
+    }
+    .spoiler img{
+        width:100%;
+        padding-bottom:10px;
+    }
+    .mainInfo{
+        display:none;
+    }
+    .bgWrapper main .blocksNews.postWrapper .blockContent .blockAbout--post{
+        flex-wrap:wrap;
+    }
+    .socialMenu{
+        margin-top:10px;
+    }
+    .socialMenu li:first-child{
+        margin-left:0;
+    }
+    .bgWrapper main.pageGame{
+        flex-direction:row;
+    }
+    .hotSlider--name span{
+        display:none;
+    }
+    .bgWrapper main .hotSlider--wrapper .hotSlider--name{
+        display:none;
+    }
+    .bgWrapper main .sliderCalendar--block .myslide h1{
+        padding:20px 40px;
+    }
+    .bgWrapper main .blockWrapper.small{
+        min-width:auto;
+        width:calc(100% - 10px);
+        display:inline-block;
+        vertical-align:top;
+        max-height:initial;
+    }
+    .bgWrapper main .blockWrapper.small.top{
+        width:100%;
+        max-height:initial;
+        margin: 20px 0 0 0;
+    }
+    .bgWrapper main.pageGame{
+        flex-direction:column-reverse;
+    }
+    .bgWrapper main .blockWrapper .game-img{
+        display:none;
+        width:100%;
+        height:auto;
+        max-height:initial;
+    }
+    .bgWrapper main .blockWrapper .game-img img{
+        border-radius:15px 15px 0 0;
+        width:100%;
+    }
+    .bgWrapper main .blockWrapper .side--bottom--block .mainInfo ul.gameTools{
+        margin:20px -10px
+    }
+    .bgWrapper main .blockWrapper .side--bottom--block .mainInfo .storeBlock--wrapper{
+        max-width:229px
+    }
+    .bgWrapper main .blockWrapper .side--bottom--block .mainInfo .storeBlock--wrapper .storeBlock{
+        flex-direction:column;
+    }
+    .bgWrapper main .blockWrapper .side--bottom--block .mainInfo .storeBlock--wrapper .storeBlock .storeBlock--devices--price{
+        margin-left:0;
+        margin-top:18px;
+        width:100%;
+        justify-content: center;
+    }
+    .bgWrapper main .blocksNews .adWrapper.small{
+        padding:10px 0;
+    }
+    .bgWrapper main .blocksNews.postWrapper .blockContent .blockAbout--post .share {
+        width: 100%;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .bgWrapper main .sliderCalendar--block .lSSlideOuter .lSPager.lSpg li a:hover {
+        width: 8px!important;
+        height: 8px!important;
+    }
+    .bgWrapper main .sliderCalendar--block .lSSlideOuter .lSPager.lSpg li a.active--button {
+        width: 8px!important;
+        height: 8px!important;
+    }
+
+}
+@media screen and (max-width:1180px){
+    .bgWrapper main .blocksNews .adWrapper.small{
+        display:none;
+    }
+    .bgWrapper main .blocksNews .blockWrapper.big{
+        width:calc(33.33% - 20px);
+    }
+}
+@media screen and (max-width:700px){
+    .bgWrapper main .blockWrapper.small.devVersion {
+        margin: 10px;
+    }
+    .bgWrapper main .blocksNews .blockWrapper.big{
+        width:100%;
+        max-width:100%;
+    }
+    .bgWrapper main .blocksNews .blockWrapper{
+        width:100%;
+    }
+    .bgWrapper main .blocksNews .blockWrapper.gameBig {
+        margin: 10px 5px;
+    }
+    .bgWrapper main .blockWrapper .side--bottom--block .newsGame--name a{
+        font-size:18px;
+    }
+    .bgWrapper main .adWrapper.small{
+        display:flex!important;
+    }
+    .saleImg.bigSale--img{
+        top:0!important;
+    }
+    .bgWrapper main .sliderCalendar--block .myslide h1{
+        font-size:18px;
+    }
+}
+@media screen and (max-width:360px){
+    .bgWrapper main .blocksNews .blockWrapper.big{
+        min-width:auto;
+    }
+    .iconBox{
+        margin-right:5px;
+    }
+    .bgWrapper main .blockWrapper{
+        min-width:auto;
+    }
+    .bgWrapper main .blockWrapper .textNews--wrapper{
+        height:auto;
+        min-height:88px;
+    }
+}
+.saleImg{
+    background:url(img/stripes.png);
+    background-repeat:no-repeat;
+    position:absolute;
+    top:0;
+    right:0;
+    width:64px;
+    height:64px;
+}
+.saleImg.small{
+    background:url(img/stripes_little.png);
+    width:49px;
+    height:48px;
+}
+.saleImg span{
+    display:inline-block;
+    font-size:16px;
+    color:#fff;
+    transform:rotate(45deg);
+    position:absolute;
+    top:11px;
+    right:-1px;
+}
+.saleImg.bigSale--img{
+    background-position:0 0;
+    width:64px;
+    height:64px;
+}
+.searchLineButton{
+    display:none;
+    position:absolute;
+    width:100%;
+    right:0;
+    max-width:650px;
+    padding:11px 0;
+    margin-right:23px;
+    bottom:32px;
+}
+button#searchButton{
+    background-color:#fff;
+    border:none;
+    content:"";
+    cursor:pointer;
+    outline:0;
+    display:block;
+    height:19px;
+    width:20px;
+    background-size:20px 16px;
+    background-image:url(icons/search.svg);
+    background-repeat:no-repeat;
+    position:absolute;
+    left:10px;
+    top:12px;
+}
+.searchLine{
+    width:calc(100% - 80px);
+    outline:0;
+    margin-left:40px;
+    margin-top:1px;
+    border:none;
+}
+.searchClose{
+    background-color:#fff;
+    border:none;
+    content:"";
+    cursor:pointer;
+    outline:0;
+    display:block;
+    height:20px;
+    width:20px;
+    background-size:20px 20px;
+    background-image:url(icons/close_menu.svg);
+    background-repeat:no-repeat;
+    position:absolute;
+    right:12px;
+    top:11px;
+}
+.topText--news{
+    display:inline-block;
+    font-weight:700;
+    line-height:22px;
+}
+.topText--news .typeBlock{
+    display:inline-block;
+    vertical-align:middle;
+    font-size:12px;
+}
+.topText--news .typeBlock span{
+    background-color:#000;
+    border-radius:3px;
+    padding:0 5px;
+}
+.topText--news .typeBlock span a{
+    color:#fff;
+    text-decoration:none;
+    line-height:17px;
+}
+.topText--news .typeBlock span.triangle{
+    background:url(img/ticket.svg);
+    background-repeat:no-repeat;
+    width:57px;
+    height:17px;
+    display:flex;
+    align-items:center;
+}
+.topText--news .text{
+    display:inline;
+    vertical-align: middle;
+}
+.topText--news .text a{
+    margin-left:10px;
+    text-decoration:none;
+    color:#141414;
+}
