@@ -1,0 +1,20 @@
+<svg width="10" height="10" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="12" width="12" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_9">
+   <rect fill="#a7a7a7" stroke="null" id="svg_1" height="1.092971" width="4.371884" y="4.453515" x="0.081631"/>
+   <rect fill="#a7a7a7" stroke="null" id="svg_2" height="3.278913" width="1.092971" y="3.360544" x="1.174602"/>
+   <rect fill="#a7a7a7" stroke="null" id="svg_3" height="4.371884" width="1.092971" y="0.081631" x="4.453515"/>
+   <rect fill="#a7a7a7" stroke="null" id="svg_4" height="1.092971" width="3.278913" y="1.174602" x="3.360544"/>
+   <rect fill="#a7a7a7" stroke="null" id="svg_5" height="1.092971" width="4.371884" y="4.453515" x="5.546486"/>
+   <rect fill="#a7a7a7" stroke="null" id="svg_6" height="3.278913" width="1.092971" y="3.360544" x="7.732428"/>
+   <rect fill="#a7a7a7" stroke="null" id="svg_7" height="4.371884" width="1.092971" y="5.546486" x="4.453515"/>
+   <rect fill="#a7a7a7" stroke="null" id="svg_8" height="1.092971" width="3.278913" y="7.732428" x="3.360544"/>
+  </g>
+ </g>
+</svg>

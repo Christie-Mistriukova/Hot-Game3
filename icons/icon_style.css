@@ -1,0 +1,7 @@
+svg {
+    width: 64px; height: 64px;
+    transform: scale(4);
+}
+path:hover {
+    fill: red !IMPORTANT;
+}

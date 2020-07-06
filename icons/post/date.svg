@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="clocks_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#A7A7A7;}
+</style>
+<g id="clocks">
+	<g>
+		<path class="st0" d="M10.5,5c3,0,5.5,2.5,5.5,5.5S13.5,16,10.5,16S5,13.5,5,10.5S7.5,5,10.5,5 M10.5,4C6.9,4,4,6.9,4,10.5
+			S6.9,17,10.5,17s6.5-2.9,6.5-6.5S14.1,4,10.5,4L10.5,4z"/>
+	</g>
+</g>
+<g id="hours">
+	<g>
+		<polygon class="st0" points="10.3,9.6 9.7,10.4 12.7,12.4 13.3,11.6 10.3,9.6 		"/>
+	</g>
+</g>
+<g id="minures">
+	<g>
+		<polygon class="st0" points="11,6 10,6 10,11 11,11 11,6 		"/>
+	</g>
+</g>
+</svg>
